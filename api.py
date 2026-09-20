@@ -38,7 +38,7 @@ app.add_middleware(
 # ═══════════════════════════════════════════════════════════════
 #  CHEMINS — robuste face aux env vars malformées
 # ═══════════════════════════════════════════════════════════════
-BASE_DIR = Path(__file__).resolve().parent.parent          # /opt/render/project/src
+BASE_DIR = Path(__file__).resolve().parent          # /opt/render/project/src
 
 def _resolve_env_path(env_name: str, default: Path) -> Path:
     """Lit une variable d'env, ignore si malformée ou inexistante."""
